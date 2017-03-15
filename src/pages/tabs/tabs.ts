@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 
-import { HomePage } from '../home/home';
-import { AboutPage } from '../about/about';
-import { ContactPage } from '../contact/contact';
+// import { HomePage } from '../home/home';
+// import { AboutPage } from '../about/about';
+// import { ContactPage } from '../contact/contact';
 import { PendientesComponent } from './../pendientes/pendientes.component';
+import { TerminadosComponent } from '../terminados/terminados.component';
 
 
 
@@ -15,8 +16,9 @@ export class TabsPage {
   // should be each tab's root Page
   // tab1Root: any = HomePage;
   tab1Root: any = PendientesComponent;
-  tab2Root: any = AboutPage;
-  tab3Root: any = ContactPage;
+  tab2Root: any = TerminadosComponent
+  // tab2Root: any = AboutPage;
+  // tab3Root: any = ContactPage;
 
   constructor() {
 
