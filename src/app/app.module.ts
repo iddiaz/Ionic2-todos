@@ -1,3 +1,4 @@
+import { PlaceHolderPipe } from './pipes/placeholder.pipe';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
@@ -8,13 +9,16 @@ import { ListaDeseosService } from './services/lista-deseos.services';
 
 import { PendientesComponent } from './../pages/pendientes/pendientes.component';
 import { TerminadosComponent } from './../pages/terminados/terminados.component';
+import { AgregarComponent } from './../pages/agregar/agregar.component';
 
 @NgModule({
   declarations: [
     MyApp,
     TabsPage,
     PendientesComponent,
-    TerminadosComponent
+    TerminadosComponent,
+    AgregarComponent,
+    PlaceHolderPipe
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -24,7 +28,8 @@ import { TerminadosComponent } from './../pages/terminados/terminados.component'
     MyApp,
     TabsPage,
     PendientesComponent,
-    TerminadosComponent
+    TerminadosComponent,
+    AgregarComponent
   ],
   providers: [
     ListaDeseosService,
