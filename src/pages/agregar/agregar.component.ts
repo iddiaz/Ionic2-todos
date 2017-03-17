@@ -49,8 +49,9 @@ export class AgregarComponent implements OnInit {
     }
 
     let lista = new Lista( this.nombreLista );
-    lista.items = this.items
-    this.listaDeseos.listas.push( lista );
+    lista.items = this.items;
+    // this.listaDeseos.listas.push( lista );
+    this.listaDeseos.agregarLista( lista );
     this.navCtrl.pop();
 
   }
